@@ -76,9 +76,29 @@
 
     <div class="referral-code">JARRETT1683493</div>
 
-    <a href="https://rivian.com/configurations/list?reprCode=JARRETT1683493" class="cta-button">Use Code and Configure Now</a>
+    <a href="https://rivian.com/configurations/list?reprCode=JARRETT1683493" class="cta-button" onclick="trackClick()" target="_blank" rel="noopener noreferrer">Use Code and Configure Now</a>
 
     <p class="note">This referral helps you join the Rivian community while supporting fellow EV enthusiasts.</p>
   </div>
+
+<script>
+  function trackClick() {
+    let count = localStorage.getItem("rivianClicks") || 0;
+    count++;
+    localStorage.setItem("rivianClicks", count);
+    console.log(`Referral link clicked ${count} times`);
+  }
+
+  // Optional: Display it somewhere
+  window.onload = function () {
+    const existing = document.getElementById("click-counter");
+    if (existing) {
+      let count = localStorage.getItem("rivianClicks") || 0;
+      existing.textContent = `Referral link clicked ${count} times on this device.`;
+    }
+  };
+</script>
+
+  
 </body>
 </html>
