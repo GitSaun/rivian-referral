@@ -1,88 +1,157 @@
-/* Import Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
-
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f7f9fc;
+    font-family: Arial, sans-serif;
+    text-align: center;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
 header {
-    background-color: #1a3c40;
+    background: #0057B8;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
 }
 
 h1 {
     margin: 0;
-    font-size: 2rem;
 }
 
 p {
-    font-size: 1.1rem;
-    margin-top: 10px;
+    font-size: 18px;
 }
 
 .cta-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 14px 26px;
-    font-size: 1rem;
-    background-color: #ff8200;
+    background: #FF8C00;
     color: white;
+    padding: 15px 20px;
     text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 .cta-button:hover {
-    background-color: #e46e00;
+    background: #FF7000;
 }
 
 .content {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-}
-
-.content h2 {
-    color: #1a3c40;
-}
-
-ul {
-    text-align: left;
-    padding-left: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
 
 footer {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #2d2d2d;
+    margin-top: 20px;
+    padding: 10px;
+    background: #222;
     color: white;
-    text-align: center;
-    font-size: 0.9rem;
 }
 
 .social-buttons a {
     display: inline-block;
-    margin: 10px;
-    padding: 10px 16px;
-    background-color: #1da1f2;
+    background: #1DA1F2;
     color: white;
-    border-radius: 6px;
+    padding: 10px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    margin: 5px;
+    border-radius: 5px;
 }
 
 .social-buttons a:hover {
-    background-color: #0d8ae0;
+    background: #1177BB;
+}
+
+.story {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.story h2 {
+    font-size: 1.75rem;
+    color: #1a3c40;
+    margin-bottom: 16px;
+}
+
+.story p {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: #444;
+    line-height: 1.8;
+}
+
+.pros {
+    background-color: #f0f7f9;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    text-align: left;
+}
+
+.pros h2 {
+    font-size: 1.75rem;
+    color: #1a3c40;
+    margin-bottom: 20px;
+}
+
+.pros ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pros li {
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.pros li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #00897b;
+}
+
+.final-cta {
+    background-color: #1a3c40;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.final-cta .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.final-cta p {
+    font-size: 1.25rem;
+    margin-bottom: 16px;
+}
+
+.final-cta .cta-button {
+    background-color: #ff8200;
+    color: white;
+    padding: 14px 26px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.final-cta .cta-button:hover {
+    background-color: #e46e00;
 }
